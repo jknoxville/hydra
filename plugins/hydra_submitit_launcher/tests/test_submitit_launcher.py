@@ -41,7 +41,7 @@ class TestSubmititLauncher(LauncherTestSuite):
                     "launcher": {
                         "params": {
                             "queue": "local",
-                            "folder": "${hydra.sweep.dir}/.${hydra.launcher.params.queue}",
+                            "path": "${hydra.sweep.dir}/.${hydra.launcher.params.queue}",
                             "queue_parameters": {
                                 "local": {
                                     "gpus_per_node": 1,
@@ -67,7 +67,7 @@ class TestSubmititLauncher(LauncherTestSuite):
                     "launcher": {
                         "params": {
                             "queue": "auto",
-                            "folder": "${hydra.sweep.dir}/.${hydra.launcher.params.queue}",
+                            "path": "${hydra.sweep.dir}/.${hydra.launcher.params.queue}",
                             "queue_parameters": {
                                 "auto": {
                                     "cluster": "local",
